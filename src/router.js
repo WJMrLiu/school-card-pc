@@ -99,6 +99,11 @@ const router = new Router({
       meta: { title: "校园卡所有帐户月结算表"},
     },
     {
+      path: "/getInfoByMonthTransDate2",
+      component: () => import(/* webpackChunkName: "getCampusStatment" */ "./components/page/getInfoByMonthTransDate2.vue"),
+      meta: { title: "商户消费汇总月报"},
+    },
+    {
       path: "*",
       name: "404",
       component: () => import(/* webpackChunkName: "exception" */ "@/views/Exception/404"),
